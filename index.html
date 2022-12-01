@@ -4,9 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <header class="header">
+    <h1>my library</h1>
+    <button class="book-button">+ add book</button>
+  </header>
+  <main class="main">
+  </main>
+  <div class="modal">
+    <div class="modal-content">
+      <form>
+        <h2>Add new book</h2>
+        <input type="text" id="title" name="title" placeholder="Title">
+        <input type="text" id="author" name="author" placeholder="Author">
+        <input type="text" id="pages" name="pages" placeholder="Pages">
+        <div class="read-container">
+          <label for="read" id="read-label">Have you read it?</label>
+          <input type="checkbox" id="read" name="read">
+        </div>     
+        <button type="button" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2022 russgrav</p>
+    <a href="https://github.com/russgrav"><img src='iconmonstr-github-1.svg'></a>
+  </div>
 </body>
 </html>
