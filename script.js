@@ -30,8 +30,9 @@ function Book(author, title, totalPages, readStatus, displayStatus) {
   this.displayStatus = displayStatus;
 }
 
-function addBookToLibrary() {
+function addBookToLibrary(event) {
   // takes user input to store books into array "myLibrary"
+  event.preventDefault();
   let book = new Book(
     document.getElementById("author").value,
     document.getElementById("title").value,
