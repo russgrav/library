@@ -19,12 +19,12 @@
     <div class="modal-content">
       <form>
         <h2>Add new book</h2>
-        <input type="text" id="title" name="title" placeholder="Title">
-        <input type="text" id="author" name="author" placeholder="Author">
-        <input type="text" id="pages" name="pages" placeholder="Pages">
+        <input type="text" id="title" name="title" placeholder="Title" required>
+        <input type="text" id="author" name="author" placeholder="Author" required>
+        <input type="text" id="pages" name="pages" placeholder="Pages" required>
         <div class="read-container">
           <label for="read" id="read-label">Have you read it?</label>
-          <input type="checkbox" id="read" name="read">
+          <input type="checkbox" id="read" name="read" required>
         </div>     
         <button type="submit" id="submit">Submit</button>
       </form>

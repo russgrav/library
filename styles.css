@@ -46,6 +46,10 @@ body {
   background-color: var(--darkgrey);
 }
 
+.book-button:active {
+  box-shadow: 0 0 0 2px black, 0 0 0 1px white inset;
+}
+
 .main {
   background-color: var(--grey);
   display: grid;
@@ -76,32 +80,41 @@ body {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
-  /* border: solid 3px #53b550; */
   color: #53b550;
   background-color: var(--lightgreen);
   padding: 10px 20px;
   text-align: center;
 }
 
+.read:active {
+  box-shadow: 0 0 0 2px #53b550, 0 0 0 1px white inset;
+}
+
 .not-read {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
-  /* border: solid 3px #ff3f3f; */
   color: #ff3f3f;
   background-color: var(--red);
   padding: 10px 20px;
   text-align: center;
 }
 
+.not-read:active {
+  box-shadow: 0 0 0 2px #ff3f3f, 0 0 0 1px white inset;
+}
+
 .remove {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
-  /* border: solid 3px black; */
   background-color: var(--grey);
   padding: 10px 20px;
   text-align: center;
+}
+
+.remove:active {
+  box-shadow: 0 0 0 2px black, 0 0 0 1px white inset;
 }
 
 .read:hover,
@@ -170,6 +183,11 @@ input[type=checkbox] {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  color: #53b550;
+}
+
+#submit:active {
+  box-shadow: 0 0 0 2px #53b550, 0 0 0 1px white inset;
 }
 
 #submit:hover {

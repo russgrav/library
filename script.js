@@ -68,7 +68,7 @@ function displayBooks() {
       author.textContent = book.author;
       const pages = document.createElement('div');
       pages.classList.add('pages');
-      pages.textContent = book.totalPages;
+      pages.textContent = `${book.totalPages} pages`;
       const read = document.createElement('button');
       read.classList.add('read');
       if (book.readStatus == true) {
@@ -108,7 +108,9 @@ function displayBooks() {
         bookCard.removeChild(read);
         bookCard.removeChild(remove);
         main.removeChild(bookCard);
-        myLibrary.remove(book);
+        const index = myLibrary.indexOf(book);
+        myLibrary.splice(index, 1);
+        console.log(myLibrary);
       })
     }
   }
