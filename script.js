@@ -10,25 +10,26 @@ const readInput = document.querySelector('#read');
 
 let myLibrary = [];
 
+class Book {
+  constructor(author, title, totalPages, readStatus, displayStatus) {
+    this.author = author;
+    this.title = title;
+    this.totalPages = totalPages;
+    this.readStatus = readStatus;
+    this.displayStatus = displayStatus;
+  }
+}
+
 const hungerGames = new Book("Suzanne Collins", "The Hunger Games",
-374, true, false);
+  374, true, false);
 myLibrary.push(hungerGames);
 
 const countCristo = new Book("F. Scott Fitzgerald", "The Great Gatsby",
-208, false, false);
+  208, false, false);
 myLibrary.push(countCristo);
 
 const divergent = new Book("Veronica Roth", "Divergent", 487, true, false);
 myLibrary.push(divergent);
-
-function Book(author, title, totalPages, readStatus, displayStatus) {
-  // constructor
-  this.author = author;
-  this.title = title;
-  this.totalPages = totalPages;
-  this.readStatus = readStatus;
-  this.displayStatus = displayStatus;
-}
 
 function addBookToLibrary(event) {
   // takes user input to store books into array "myLibrary"
